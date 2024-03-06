@@ -1,0 +1,44 @@
+#GPIO出力・制御
+import RPi.GPIO as GPIO
+import wiringpi
+import smbus
+
+#ネット周り
+import requests
+import urllib
+
+#FaBo
+import FaBoAmbientLight_ISL29034
+import FaBoPriximity_VCNL4010
+
+#データの保存周り
+import pickle
+
+#謎だったもの
+import sys #標準搭載
+import struct#バイナリデータを扱う
+
+#cmd出力
+import os
+
+#Googleまわり
+from __future__ import print_function
+from googleapiclient.discovery import build
+from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request
+
+#日付周り
+import time
+import datetime
+import locale
+
+#discord周り
+import discord
+
+#その他(使ってない)
+import random
+import numpy
+import pandas
+
+#日本語入力
+apt-get install ibus_mozc
